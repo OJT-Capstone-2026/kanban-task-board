@@ -1,0 +1,1663 @@
+--- Executing blocking command at Fri Jun 19 21:03:16 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && ls -la src/
+--- Output ---
+ls: src/: No such file or directory
+
+
+
+--- Executing blocking command at Fri Jun 19 21:03:20 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && ls -la
+--- Output ---
+total 56
+drwxr-xr-x@  8 theaditronik  staff    256 Jun 19 21:00 .
+drwx------@ 16 theaditronik  staff    512 Jun 19 20:30 ..
+-rw-r--r--@  1 theaditronik  staff   5807 Jun 19 19:29 README.md
+drwxr-xr-x@  9 theaditronik  staff    288 Jun 19 19:17 css
+drwxr-xr-x@  3 theaditronik  staff     96 Jun 19 19:29 docs
+-rw-r--r--@  1 theaditronik  staff  19924 Jun 19 19:18 index.html
+drwxr-xr-x@  5 theaditronik  staff    160 Jun 19 19:18 js
+drwxr-xr-x@  3 theaditronik  staff     96 Jun 19 21:03 terminal_logs
+
+
+
+--- Executing blocking command at Fri Jun 19 21:03:24 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && ls -la js/
+--- Output ---
+total 8
+drwxr-xr-x@  5 theaditronik  staff   160 Jun 19 19:18 .
+drwxr-xr-x@  8 theaditronik  staff   256 Jun 19 21:00 ..
+drwxr-xr-x@  3 theaditronik  staff    96 Jun 19 19:16 data
+-rw-r--r--@  1 theaditronik  staff  1714 Jun 19 19:18 main.js
+drwxr-xr-x@ 12 theaditronik  staff   384 Jun 19 19:18 modules
+
+
+
+--- Executing blocking command at Fri Jun 19 21:03:27 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && ls -la js/modules/
+--- Output ---
+total 136
+drwxr-xr-x@ 12 theaditronik  staff    384 Jun 19 19:18 .
+drwxr-xr-x@  5 theaditronik  staff    160 Jun 19 19:18 ..
+-rw-r--r--@  1 theaditronik  staff   2991 Jun 19 19:17 activity.js
+-rw-r--r--@  1 theaditronik  staff   9208 Jun 19 19:17 board.js
+-rw-r--r--@  1 theaditronik  staff   5089 Jun 19 19:17 dragdrop.js
+-rw-r--r--@  1 theaditronik  staff   1109 Jun 19 19:30 filters.js
+-rw-r--r--@  1 theaditronik  staff  17855 Jun 19 19:29 modal.js
+-rw-r--r--@  1 theaditronik  staff    598 Jun 19 19:17 search.js
+-rw-r--r--@  1 theaditronik  staff   3564 Jun 19 19:17 stats.js
+-rw-r--r--@  1 theaditronik  staff   1803 Jun 19 19:16 storage.js
+-rw-r--r--@  1 theaditronik  staff   3516 Jun 19 19:17 taskManager.js
+-rw-r--r--@  1 theaditronik  staff   1844 Jun 19 19:16 theme.js
+
+
+
+--- Executing blocking command at Fri Jun 19 21:03:35 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && ls -la css/
+--- Output ---
+total 112
+drwxr-xr-x@ 9 theaditronik  staff   288 Jun 19 19:17 .
+drwxr-xr-x@ 8 theaditronik  staff   256 Jun 19 21:00 ..
+-rw-r--r--@ 1 theaditronik  staff  5089 Jun 19 19:16 animations.css
+-rw-r--r--@ 1 theaditronik  staff  3438 Jun 19 19:16 base.css
+-rw-r--r--@ 1 theaditronik  staff  7217 Jun 19 19:16 board.css
+-rw-r--r--@ 1 theaditronik  staff  9070 Jun 19 19:16 layout.css
+-rw-r--r--@ 1 theaditronik  staff  4685 Jun 19 19:16 modal.css
+-rw-r--r--@ 1 theaditronik  staff  4539 Jun 19 19:17 responsive.css
+-rw-r--r--@ 1 theaditronik  staff  5033 Jun 19 19:16 variables.css
+
+
+
+--- Executing blocking command at Fri Jun 19 21:03:41 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && head -100 js/modules/modal.js
+--- Output ---
+import { taskManager } from './taskManager.js';
+
+export const modal = {
+  currentEditingTaskId: null,
+  modalSubtasks: [], // Local state for subtasks currently in the form
+  deletingTaskId: null,
+
+  init() {
+    this.bindEvents();
+    this.bindShortcuts();
+    this.bindCommandPalette();
+  },
+
+  // --- MODAL CONTROLS ---
+  openCreateModal() {
+    this.currentEditingTaskId = null;
+    this.modalSubtasks = [];
+    
+    const modalEl = document.getElementById('task-modal');
+    const form = document.getElementById('task-form');
+    const titleText = document.getElementById('modal-title-text');
+    
+    if (form) form.reset();
+    if (titleText) titleText.textContent = 'Create New Task';
+    
+    this.renderModalSubtasks();
+    this.clearErrors();
+
+    // Hide delete button in create mode
+    const deleteBtn = document.getElementById('btn-delete-task');
+    if (deleteBtn) deleteBtn.style.display = 'none';
+
+    if (modalEl) modalEl.classList.add('open');
+    
+    // Focus title input
+    setTimeout(() => {
+      const titleInput = document.getElementById('task-title-input');
+      if (titleInput) titleInput.focus();
+    }, 100);
+  },
+
+  openEditModal(taskId) {
+    const task = taskManager.getTask(taskId);
+    if (!task) return;
+
+    this.currentEditingTaskId = taskId;
+    this.modalSubtasks = JSON.parse(JSON.stringify(task.subtasks || [])); // Deep clone
+    
+    const modalEl = document.getElementById('task-modal');
+    const titleText = document.getElementById('modal-title-text');
+    if (titleText) titleText.textContent = 'Edit Task Details';
+    
+    this.clearErrors();
+
+    // Populate inputs
+    document.getElementById('task-title-input').value = task.title;
+    document.getElementById('task-desc-input').value = task.description || '';
+    document.getElementById('task-priority-input').value = task.priority || 'medium';
+    document.getElementById('task-due-date-input').value = task.dueDate || '';
+    document.getElementById('task-assignee-input').value = task.assignee || '';
+    document.getElementById('task-tags-input').value = (task.tags || []).join(', ');
+
+    this.renderModalSubtasks();
+
+    // Show delete button in edit mode
+    const deleteBtn = document.getElementById('btn-delete-task');
+    if (deleteBtn) deleteBtn.style.display = 'inline-flex';
+
+    if (modalEl) modalEl.classList.add('open');
+  },
+
+  closeModal() {
+    const modalEl = document.getElementById('task-modal');
+    if (modalEl) modalEl.classList.remove('open');
+    this.currentEditingTaskId = null;
+    this.modalSubtasks = [];
+  },
+
+  openDeleteConfirmModal(taskId) {
+    this.deletingTaskId = taskId;
+    const deleteModal = document.getElementById('delete-modal');
+    if (deleteModal) deleteModal.classList.add('open');
+  },
+
+  closeDeleteConfirmModal() {
+    const deleteModal = document.getElementById('delete-modal');
+    if (deleteModal) deleteModal.classList.remove('open');
+    this.deletingTaskId = null;
+  },
+
+  // --- SUBTASK BUILDER LOGIC ---
+  addSubtask() {
+    const input = document.getElementById('new-subtask-input');
+    if (!input) return;
+
+    const title = input.value.trim();
+    if (!title) return;
+
+    const newSub = {
+      id: `sub-${Date.now()}-${Math.random().toString(36).substr(2, 4)}`,
+
+
+
+--- Executing blocking command at Fri Jun 19 21:05:47 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cd "/Users/theaditronik/Desktop/Kanban Task Board" && head -50 js/modules/board.js
+--- Output ---
+import { taskManager } from './taskManager.js';
+import { dragdrop } from './dragdrop.js';
+
+export const board = {
+  currentFilters: {
+    searchQuery: '',
+    priority: '',
+    assignee: ''
+  },
+  renderedCardIds: new Set(), // Track rendered card IDs for new task animations
+
+  init() {
+    // Subscribe to task state changes
+    taskManager.subscribe(({ tasks }) => this.render(tasks));
+
+    // Bind filter control inputs
+    this.bindFilterEvents();
+    
+    // Bind mobile column navigation tabs
+    this.bindMobileTabs();
+
+    // Initial render
+    this.render(taskManager.getTasks());
+  },
+
+  setFilter(key, value) {
+    this.currentFilters[key] = value;
+    this.render(taskManager.getTasks());
+  },
+
+  clearFilters() {
+    this.currentFilters = {
+      searchQuery: '',
+      priority: '',
+      assignee: ''
+    };
+
+    // Reset dropdown elements if present
+    const prioritySelect = document.getElementById('filter-priority');
+    const assigneeSelect = document.getElementById('filter-assignee');
+    const searchInput = document.getElementById('global-search');
+    
+    if (prioritySelect) prioritySelect.value = '';
+    if (assigneeSelect) assigneeSelect.value = '';
+    if (searchInput) searchInput.value = '';
+
+    this.render(taskManager.getTasks());
+  },
+
+  bindFilterEvents() {
+
+
+
+--- Writing content to file at Fri Jun 19 21:09:48 2026 ---
+> /Users/theaditronik/Desktop/Kanban Task Board/js/modules/commandPalette.js
+
+-------- 
+/**
+ * COMMAND PALETTE MODULE
+ * Enterprise-grade command palette with glassmorphism design
+ * Implements fuzzy search, keyboard shortcuts, and quick actions
+ */
+
+import { modal } from './modal.js';
+import { taskManager } from './taskManager.js';
+import { board } from './board.js';
+
+export const commandPalette = {
+  isOpen: false,
+  searchQuery: '',
+  selectedIndex: 0,
+  filteredActions: [],
+  shortcutLegendOpen: false,
+
+  // Available actions in the command palette
+  actions: [
+    {
+      id: 'new-task',
+      title: 'Create New Task',
+      description: 'Open modal to create a new task',
+      keywords: ['create', 'new', 'add', 'task'],
+      icon: '➕',
+      shortcut: 'N',
+      handler: () => modal.openCreateModal()
+    },
+    {
+      id: 'search-tasks',
+      title: 'Search Tasks',
+      description: 'Focus on the global search input',
+      keywords: ['search', 'find', 'filter'],
+      icon: '🔍',
+      shortcut: '/',
+      handler: () => {
+        const searchInput = document.getElementById('global-search');
+        if (searchInput) {
+          searchInput.focus();
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'clear-filters',
+      title: 'Clear All Filters',
+      description: 'Reset all active filters',
+      keywords: ['clear', 'reset', 'filters', 'remove'],
+      icon: '🗑️',
+      shortcut: null,
+      handler: () => {
+        board.clearFilters();
+        commandPalette.close();
+      }
+    },
+    {
+      id: 'toggle-theme',
+      title: 'Toggle Dark Mode',
+      description: 'Switch between light and dark theme',
+      keywords: ['theme', 'dark', 'light', 'mode'],
+      icon: '🌓',
+      shortcut: null,
+      handler: () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) themeToggle.click();
+        commandPalette.close();
+      }
+    },
+    {
+      id: 'export-data',
+      title: 'Export Tasks',
+      description: 'Download all tasks as JSON file',
+      keywords: ['export', 'download', 'backup', 'save'],
+      icon: '💾',
+      shortcut: null,
+      handler: () => {
+        taskManager.exportTasks();
+        commandPalette.close();
+      }
+    },
+    {
+      id: 'import-data',
+      title: 'Import Tasks',
+      description: 'Upload and import tasks from JSON file',
+      keywords: ['import', 'upload', 'restore', 'load'],
+      icon: '📥',
+      shortcut: null,
+      handler: () => {
+        const importInput = document.getElementById('import-input');
+        if (importInput) {
+          importInput.click();
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'show-stats',
+      title: 'View Analytics',
+      description: 'Show task statistics and analytics',
+      keywords: ['stats', 'analytics', 'metrics', 'dashboard'],
+      icon: '📊',
+      shortcut: null,
+      handler: () => {
+        const analyticsSection = document.getElementById('analytics-section');
+        if (analyticsSection) {
+          analyticsSection.scrollIntoView({ behavior: 'smooth' });
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'keyboard-shortcuts',
+      title: 'Keyboard Shortcuts',
+      description: 'View all available keyboard shortcuts',
+      keywords: ['shortcuts', 'keys', 'help', 'commands'],
+      icon: '⌨️',
+      shortcut: '?',
+      handler: () => {
+        commandPalette.close();
+        setTimeout(() => commandPalette.openShortcutLegend(), 100);
+      }
+    }
+  ],
+
+  // Keyboard shortcuts configuration
+  shortcuts: [
+    { key: 'k', ctrlOrCmd: true, description: 'Open Command Palette', action: 'toggle-palette' },
+    { key: 'n', ctrlOrCmd: false, description: 'New Task', action: 'new-task' },
+    { key: 'e', ctrlOrCmd: false, description: 'Edit Selected Task', action: 'edit-task' },
+    { key: 'd', ctrlOrCmd: false, description: 'Delete Selected Task', action: 'delete-task' },
+    { key: '/', ctrlOrCmd: false, description: 'Focus Search', action: 'search' },
+    { key: 'Escape', ctrlOrCmd: false, description: 'Close Modal/Palette', action: 'close' },
+    { key: '?', ctrlOrCmd: false, description: 'Show Shortcuts', action: 'help' }
+  ],
+
+  /**
+   * Initialize the command palette
+   */
+  init() {
+    this.createPaletteHTML();
+    this.createShortcutLegendHTML();
+    this.bindKeyboardEvents();
+    this.bindPaletteEvents();
+  },
+
+  /**
+   * Create the command palette HTML structure
+   */
+  createPaletteHTML() {
+    const existing = document.getElementById('command-palette-overlay');
+    if (existing) existing.remove();
+
+    const paletteHTML = `
+      <div id="command-palette-overlay" class="command-palette-overlay">
+        <div class="command-palette-container">
+          <div class="command-palette-header">
+            <div class="command-palette-icon">⚡</div>
+            <input 
+              type="text" 
+              id="command-palette-input" 
+              class="command-palette-input" 
+              placeholder="Type a command or search..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <div class="command-palette-close" id="command-palette-close">
+              <span>ESC</span>
+            </div>
+          </div>
+          <div class="command-palette-results" id="command-palette-results">
+            <div class="command-palette-empty">
+              Type to search for commands...
+            </div>
+          </div>
+          <div class="command-palette-footer">
+            <div class="command-palette-hint">
+              <kbd>↑↓</kbd> Navigate
+              <kbd>Enter</kbd> Execute
+              <kbd>ESC</kbd> Close
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', paletteHTML);
+  },
+
+  /**
+   * Create the keyboard shortcut legend HTML
+   */
+  createShortcutLegendHTML() {
+    const existing = document.getElementById('shortcut-legend-overlay');
+    if (existing) existing.remove();
+
+    const shortcutsHTML = this.shortcuts.map(shortcut => {
+      const keyDisplay = shortcut.ctrlOrCmd 
+        ? `<kbd class="key-combo"><span class="key-mod">${this.isMac() ? 'Cmd' : 'Ctrl'}</span> + <span class="key-main">${shortcut.key.toUpperCase()}</span></kbd>`
+        : `<kbd class="key-single">${shortcut.key === 'Escape' ? 'ESC' : shortcut.key.toUpperCase()}</kbd>`;
+      
+      return `
+        <div class="shortcut-item">
+          ${keyDisplay}
+          <span class="shortcut-description">${shortcut.description}</span>
+        </div>
+      `;
+    }).join('');
+
+    const legendHTML = `
+      <div id="shortcut-legend-overlay" class="shortcut-legend-overlay">
+        <div class="shortcut-legend-container">
+          <div class="shortcut-legend-header">
+            <h2>⌨️ Keyboard Shortcuts</h2>
+            <button class="shortcut-legend-close" id="shortcut-legend-close">×</button>
+          </div>
+          <div class="shortcut-legend-content">
+            ${shortcutsHTML}
+          </div>
+          <div class="shortcut-legend-footer">
+            <p>Press <kbd>?</kbd> anytime to toggle this guide</p>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', legendHTML);
+  },
+
+  /**
+   * Bind keyboard event listeners
+   */
+  bindKeyboardEvents() {
+    document.addEventListener('keydown', (e) => {
+      // Ignore if typing in input field (except for command palette trigger)
+      const isInputFocused = e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA';
+      
+      // Command Palette Toggle (Cmd/Ctrl+K)
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        this.toggle();
+        return;
+      }
+
+      // If command palette is open, handle its shortcuts
+      if (this.isOpen) {
+        this.handlePaletteKeydown(e);
+        return;
+      }
+
+      // If shortcut legend is open, close on ESC
+      if (this.shortcutLegendOpen && e.key === 'Escape') {
+        e.preventDefault();
+        this.closeShortcutLegend();
+        return;
+      }
+
+      // Global shortcuts (only when not typing in inputs)
+      if (!isInputFocused && !this.isOpen) {
+        this.handleGlobalShortcut(e);
+      }
+    });
+  },
+
+  /**
+   * Handle global keyboard shortcuts
+   */
+  handleGlobalShortcut(e) {
+    const key = e.key.toLowerCase();
+
+    switch (key) {
+      case 'n':
+        e.preventDefault();
+        modal.openCreateModal();
+        break;
+      
+      case 'e':
+        e.preventDefault();
+        this.editFirstSelectedTask();
+        break;
+      
+      case 'd':
+        e.preventDefault();
+        this.deleteFirstSelectedTask();
+        break;
+      
+      case '/':
+        e.preventDefault();
+        const searchInput = document.getElementById('global-search');
+        if (searchInput) searchInput.focus();
+        break;
+      
+      case 'escape':
+        e.preventDefault();
+        this.closeAllModals();
+        break;
+      
+      case '?':
+        e.preventDefault();
+        this.openShortcutLegend();
+        break;
+    }
+  },
+
+  /**
+   * Handle keyboard navigation within the command palette
+   */
+  handlePaletteKeydown(e) {
+    switch (e.key) {
+      case 'Escape':
+        e.preventDefault();
+        this.close();
+        break;
+      
+      case 'ArrowDown':
+        e.preventDefault();
+        this.selectNext();
+        break;
+      
+      case 'ArrowUp':
+        e.preventDefault();
+        this.selectPrevious();
+        break;
+      
+      case 'Enter':
+        e.preventDefault();
+        this.executeSelected();
+        break;
+    }
+  },
+
+  /**
+   * Bind command palette UI events
+   */
+  bindPaletteEvents() {
+    // Input search
+    const input = document.getElementById('command-palette-input');
+    if (input) {
+      input.addEventListener('input', (e) => {
+        this.searchQuery = e.target.value;
+        this.search();
+      });
+    }
+
+    // Close button
+    const closeBtn = document.getElementById('command-palette-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => this.close());
+    }
+
+    // Overlay click to close
+    const overlay = document.getElementById('command-palette-overlay');
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) this.close();
+      });
+    }
+
+    // Shortcut legend close button
+    const legendCloseBtn = document.getElementById('shortcut-legend-close');
+    if (legendCloseBtn) {
+      legendCloseBtn.addEventListener('click', () => this.closeShortcutLegend());
+    }
+
+    // Shortcut legend overlay click to close
+    const legendOverlay = document.getElementById('shortcut-legend-overlay');
+    if (legendOverlay) {
+      legendOverlay.addEventListener('click', (e) => {
+        if (e.target === legendOverlay) this.closeShortcutLegend();
+      });
+    }
+  },
+
+  /**
+   * Toggle command palette visibility
+   */
+  toggle() {
+    if (this.isOpen) {
+      this.close();
+    } else {
+      this.open();
+    }
+  },
+
+  /**
+   * Open command palette
+   */
+  open() {
+    this.isOpen = true;
+    this.searchQuery = '';
+    this.selectedIndex = 0;
+    
+    const overlay = document.getElementById('command-palette-overlay');
+    const input = document.getElementById('command-palette-input');
+    
+    if (overlay) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    if (input) {
+      input.value = '';
+      setTimeout(() => input.focus(), 100);
+    }
+    
+    this.renderAllActions();
+  },
+
+  /**
+   * Close command palette
+   */
+  close() {
+    this.isOpen = false;
+    this.searchQuery = '';
+    this.selectedIndex = 0;
+    
+    const overlay = document.getElementById('command-palette-overlay');
+    
+    if (overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  },
+
+  /**
+   * Search and filter actions using fuzzy matching
+   */
+  search() {
+    if (!this.searchQuery.trim()) {
+      this.renderAllActions();
+      return;
+    }
+
+    this.filteredActions = this.actions.filter(action => {
+      return this.fuzzyMatch(action, this.searchQuery);
+    });
+
+    this.selectedIndex = 0;
+    this.renderResults();
+  },
+
+  /**
+   * Fuzzy match algorithm for searching
+   */
+  fuzzyMatch(action, query) {
+    const searchText = query.toLowerCase();
+    const titleMatch = action.title.toLowerCase().includes(searchText);
+    const descMatch = action.description.toLowerCase().includes(searchText);
+    const keywordMatch = action.keywords.some(kw => kw.toLowerCase().includes(searchText));
+    
+    // Simple fuzzy scoring
+    if (titleMatch || descMatch || keywordMatch) {
+      return true;
+    }
+
+    // Character-by-character fuzzy match
+    const title = action.title.toLowerCase();
+    let queryIndex = 0;
+    
+    for (let i = 0; i < title.length && queryIndex < searchText.length; i++) {
+      if (title[i] === searchText[queryIndex]) {
+        queryIndex++;
+      }
+    }
+    
+    return queryIndex === searchText.length;
+  },
+
+  /**
+   * Render all available actions
+   */
+  renderAllActions() {
+    this.filteredActions = [...this.actions];
+    this.renderResults();
+  },
+
+  /**
+   * Render search results
+   */
+  renderResults() {
+    const resultsContainer = document.getElementById('command-palette-results');
+    if (!resultsContainer) return;
+
+    if (this.filteredActions.length === 0) {
+      resultsContainer.innerHTML = `
+        <div class="command-palette-empty">
+          <span class="empty-icon">🔍</span>
+          <p>No commands found</p>
+          <small>Try a different search term</small>
+        </div>
+      `;
+      return;
+    }
+
+    const resultsHTML = this.filteredActions.map((action, index) => {
+      const isSelected = index === this.selectedIndex;
+      const shortcutHTML = action.shortcut 
+        ? `<kbd class="action-shortcut">${action.shortcut}</kbd>` 
+        : '';
+      
+      return `
+        <div class="command-palette-action ${isSelected ? 'selected' : ''}" data-action-id="${action.id}">
+          <div class="action-icon">${action.icon}</div>
+          <div class="action-content">
+            <div class="action-title">${this.highlightMatch(action.title, this.searchQuery)}</div>
+            <div class="action-description">${action.description}</div>
+          </div>
+          ${shortcutHTML}
+        </div>
+      `;
+    }).join('');
+
+    resultsContainer.innerHTML = resultsHTML;
+
+    // Bind click events to actions
+    resultsContainer.querySelectorAll('.command-palette-action').forEach((el, index) => {
+      el.addEventListener('click', () => {
+        this.selectedIndex = index;
+        this.executeSelected();
+      });
+    });
+
+    // Ensure selected item is visible
+    this.scrollToSelected();
+  },
+
+  /**
+   * Highlight matching characters in search results
+   */
+  highlightMatch(text, query) {
+    if (!query.trim()) return text;
+    
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<mark>$1</mark>');
+  },
+
+  /**
+   * Select next action in the list
+   */
+  selectNext() {
+    if (this.filteredActions.length === 0) return;
+    
+    this.selectedIndex = (this.selectedIndex + 1) % this.filteredActions.length;
+    this.renderResults();
+  },
+
+  /**
+   * Select previous action in the list
+   */
+  selectPrevious() {
+    if (this.filteredActions.length === 0) return;
+    
+    this.selectedIndex = this.selectedIndex - 1;
+    if (this.selectedIndex < 0) {
+      this.selectedIndex = this.filteredActions.length - 1;
+    }
+    this.renderResults();
+  },
+
+  /**
+   * Execute the currently selected action
+   */
+  executeSelected() {
+    if (this.filteredActions.length === 0) return;
+    
+    const selectedAction = this.filteredActions[this.selectedIndex];
+    if (selectedAction && selectedAction.handler) {
+      selectedAction.handler();
+      this.close();
+    }
+  },
+
+  /**
+   * Scroll to ensure selected item is visible
+   */
+  scrollToSelected() {
+    const resultsContainer = document.getElementById('command-palette-results');
+    if (!resultsContainer) return;
+
+    const selectedEl = resultsContainer.querySelector('.command-palette-action.selected');
+    if (selectedEl) {
+      selectedEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  },
+
+  /**
+   * Open keyboard shortcuts legend
+   */
+  openShortcutLegend() {
+    this.shortcutLegendOpen = true;
+    const overlay = document.getElementById('shortcut-legend-overlay');
+    if (overlay) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  },
+
+  /**
+   * Close keyboard shortcuts legend
+   */
+  closeShortcutLegend() {
+    this.shortcutLegendOpen = false;
+    const overlay = document.getElementById('shortcut-legend-overlay');
+    if (overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  },
+
+  /**
+   * Helper: Check if running on Mac
+   */
+  isMac() {
+    return navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  },
+
+  /**
+   * Helper: Edit first selected/visible task
+   */
+  editFirstSelectedTask() {
+    const firstCard = document.querySelector('.kanban-card');
+    if (firstCard) {
+      const taskId = firstCard.dataset.taskId;
+      if (taskId) modal.openEditModal(taskId);
+    }
+  },
+
+  /**
+   * Helper: Delete first selected/visible task
+   */
+  deleteFirstSelectedTask() {
+    const firstCard = document.querySelector('.kanban-card');
+    if (firstCard) {
+      const taskId = firstCard.dataset.taskId;
+      if (taskId) modal.openDeleteConfirmModal(taskId);
+    }
+  },
+
+  /**
+   * Helper: Close all open modals
+   */
+  closeAllModals() {
+    const modals = document.querySelectorAll('.modal.open');
+    modals.forEach(modal => modal.classList.remove('open'));
+    this.close();
+  }
+};
+
+--------
+
+--- Executing blocking command at Fri Jun 19 21:15:10 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && ls -la "/Users/theaditronik/Desktop/Kanban Task Board/src"
+--- Output ---
+ls: /Users/theaditronik/Desktop/Kanban Task Board/src: No such file or directory
+
+
+
+--- Executing blocking command at Fri Jun 19 21:15:14 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && pwd && ls -la
+--- Output ---
+/Users/theaditronik/Desktop/Kanban Task Board
+total 56
+drwxr-xr-x@  8 theaditronik  staff    256 Jun 19 21:00 .
+drwx------@ 16 theaditronik  staff    512 Jun 19 20:30 ..
+-rw-r--r--@  1 theaditronik  staff   5807 Jun 19 19:29 README.md
+drwxr-xr-x@  9 theaditronik  staff    288 Jun 19 19:17 css
+drwxr-xr-x@  3 theaditronik  staff     96 Jun 19 19:29 docs
+-rw-r--r--@  1 theaditronik  staff  19924 Jun 19 19:18 index.html
+drwxr-xr-x@  5 theaditronik  staff    160 Jun 19 19:18 js
+drwxr-xr-x@  3 theaditronik  staff     96 Jun 19 21:03 terminal_logs
+
+
+
+--- Executing blocking command at Fri Jun 19 21:15:17 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && ls -la css/ && ls -la js/
+--- Output ---
+total 112
+drwxr-xr-x@ 9 theaditronik  staff   288 Jun 19 19:17 .
+drwxr-xr-x@ 8 theaditronik  staff   256 Jun 19 21:00 ..
+-rw-r--r--@ 1 theaditronik  staff  5089 Jun 19 19:16 animations.css
+-rw-r--r--@ 1 theaditronik  staff  3438 Jun 19 19:16 base.css
+-rw-r--r--@ 1 theaditronik  staff  7217 Jun 19 19:16 board.css
+-rw-r--r--@ 1 theaditronik  staff  9070 Jun 19 19:16 layout.css
+-rw-r--r--@ 1 theaditronik  staff  4685 Jun 19 19:16 modal.css
+-rw-r--r--@ 1 theaditronik  staff  4539 Jun 19 19:17 responsive.css
+-rw-r--r--@ 1 theaditronik  staff  5033 Jun 19 19:16 variables.css
+total 8
+drwxr-xr-x@  5 theaditronik  staff   160 Jun 19 19:18 .
+drwxr-xr-x@  8 theaditronik  staff   256 Jun 19 21:00 ..
+drwxr-xr-x@  3 theaditronik  staff    96 Jun 19 19:16 data
+-rw-r--r--@  1 theaditronik  staff  1714 Jun 19 19:18 main.js
+drwxr-xr-x@ 13 theaditronik  staff   416 Jun 19 21:09 modules
+
+
+
+--- Executing blocking command at Fri Jun 19 21:15:21 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && ls -la js/modules/
+--- Output ---
+total 176
+drwxr-xr-x@ 13 theaditronik  staff    416 Jun 19 21:09 .
+drwxr-xr-x@  5 theaditronik  staff    160 Jun 19 19:18 ..
+-rw-r--r--@  1 theaditronik  staff   2991 Jun 19 19:17 activity.js
+-rw-r--r--@  1 theaditronik  staff   9208 Jun 19 19:17 board.js
+-rw-r--r--@  1 theaditronik  staff  17743 Jun 19 21:09 commandPalette.js
+-rw-r--r--@  1 theaditronik  staff   5089 Jun 19 19:17 dragdrop.js
+-rw-r--r--@  1 theaditronik  staff   1109 Jun 19 19:30 filters.js
+-rw-r--r--@  1 theaditronik  staff  17855 Jun 19 19:29 modal.js
+-rw-r--r--@  1 theaditronik  staff    598 Jun 19 19:17 search.js
+-rw-r--r--@  1 theaditronik  staff   3564 Jun 19 19:17 stats.js
+-rw-r--r--@  1 theaditronik  staff   1803 Jun 19 19:16 storage.js
+-rw-r--r--@  1 theaditronik  staff   3516 Jun 19 19:17 taskManager.js
+-rw-r--r--@  1 theaditronik  staff   1844 Jun 19 19:16 theme.js
+
+
+
+--- Executing blocking command at Fri Jun 19 21:15:25 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && head -50 "/Users/theaditronik/Desktop/Kanban Task Board/js/modules/commandPalette.js"
+--- Output ---
+/**
+ * COMMAND PALETTE MODULE
+ * Enterprise-grade command palette with glassmorphism design
+ * Implements fuzzy search, keyboard shortcuts, and quick actions
+ */
+
+import { modal } from './modal.js';
+import { taskManager } from './taskManager.js';
+import { board } from './board.js';
+
+export const commandPalette = {
+  isOpen: false,
+  searchQuery: '',
+  selectedIndex: 0,
+  filteredActions: [],
+  shortcutLegendOpen: false,
+
+  // Available actions in the command palette
+  actions: [
+    {
+      id: 'new-task',
+      title: 'Create New Task',
+      description: 'Open modal to create a new task',
+      keywords: ['create', 'new', 'add', 'task'],
+      icon: '➕',
+      shortcut: 'N',
+      handler: () => modal.openCreateModal()
+    },
+    {
+      id: 'search-tasks',
+      title: 'Search Tasks',
+      description: 'Focus on the global search input',
+      keywords: ['search', 'find', 'filter'],
+      icon: '🔍',
+      shortcut: '/',
+      handler: () => {
+        const searchInput = document.getElementById('global-search');
+        if (searchInput) {
+          searchInput.focus();
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'clear-filters',
+      title: 'Clear All Filters',
+      description: 'Reset all active filters',
+      keywords: ['clear', 'reset', 'filters', 'remove'],
+      icon: '🗑️',
+      shortcut: null,
+
+
+
+--- Executing blocking command at Fri Jun 19 21:15:29 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && ls -la "/Users/theaditronik/Desktop/Kanban Task Board/css/" | grep -i command
+--- Output ---
+
+
+
+--- Executing blocking command at Fri Jun 19 21:16:35 2026 ---
+> . "/Users/theaditronik/.eigent/user_35983/spaces/space_c1de462075b54b3487c686910076c150/projects/1781883034350-8555/runs/1781883035203-3136/developer_agent/.venv/bin/activate" && cat "/Users/theaditronik/Desktop/Kanban Task Board/js/modules/commandPalette.js"
+--- Output ---
+/**
+ * COMMAND PALETTE MODULE
+ * Enterprise-grade command palette with glassmorphism design
+ * Implements fuzzy search, keyboard shortcuts, and quick actions
+ */
+
+import { modal } from './modal.js';
+import { taskManager } from './taskManager.js';
+import { board } from './board.js';
+
+export const commandPalette = {
+  isOpen: false,
+  searchQuery: '',
+  selectedIndex: 0,
+  filteredActions: [],
+  shortcutLegendOpen: false,
+
+  // Available actions in the command palette
+  actions: [
+    {
+      id: 'new-task',
+      title: 'Create New Task',
+      description: 'Open modal to create a new task',
+      keywords: ['create', 'new', 'add', 'task'],
+      icon: '➕',
+      shortcut: 'N',
+      handler: () => modal.openCreateModal()
+    },
+    {
+      id: 'search-tasks',
+      title: 'Search Tasks',
+      description: 'Focus on the global search input',
+      keywords: ['search', 'find', 'filter'],
+      icon: '🔍',
+      shortcut: '/',
+      handler: () => {
+        const searchInput = document.getElementById('global-search');
+        if (searchInput) {
+          searchInput.focus();
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'clear-filters',
+      title: 'Clear All Filters',
+      description: 'Reset all active filters',
+      keywords: ['clear', 'reset', 'filters', 'remove'],
+      icon: '🗑️',
+      shortcut: null,
+      handler: () => {
+        board.clearFilters();
+        commandPalette.close();
+      }
+    },
+    {
+      id: 'toggle-theme',
+      title: 'Toggle Dark Mode',
+      description: 'Switch between light and dark theme',
+      keywords: ['theme', 'dark', 'light', 'mode'],
+      icon: '🌓',
+      shortcut: null,
+      handler: () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) themeToggle.click();
+        commandPalette.close();
+      }
+    },
+    {
+      id: 'export-data',
+      title: 'Export Tasks',
+      description: 'Download all tasks as JSON file',
+      keywords: ['export', 'download', 'backup', 'save'],
+      icon: '💾',
+      shortcut: null,
+      handler: () => {
+        taskManager.exportTasks();
+        commandPalette.close();
+      }
+    },
+    {
+      id: 'import-data',
+      title: 'Import Tasks',
+      description: 'Upload and import tasks from JSON file',
+      keywords: ['import', 'upload', 'restore', 'load'],
+      icon: '📥',
+      shortcut: null,
+      handler: () => {
+        const importInput = document.getElementById('import-input');
+        if (importInput) {
+          importInput.click();
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'show-stats',
+      title: 'View Analytics',
+      description: 'Show task statistics and analytics',
+      keywords: ['stats', 'analytics', 'metrics', 'dashboard'],
+      icon: '📊',
+      shortcut: null,
+      handler: () => {
+        const analyticsSection = document.getElementById('analytics-section');
+        if (analyticsSection) {
+          analyticsSection.scrollIntoView({ behavior: 'smooth' });
+          commandPalette.close();
+        }
+      }
+    },
+    {
+      id: 'keyboard-shortcuts',
+      title: 'Keyboard Shortcuts',
+      description: 'View all available keyboard shortcuts',
+      keywords: ['shortcuts', 'keys', 'help', 'commands'],
+      icon: '⌨️',
+      shortcut: '?',
+      handler: () => {
+        commandPalette.close();
+        setTimeout(() => commandPalette.openShortcutLegend(), 100);
+      }
+    }
+  ],
+
+  // Keyboard shortcuts configuration
+  shortcuts: [
+    { key: 'k', ctrlOrCmd: true, description: 'Open Command Palette', action: 'toggle-palette' },
+    { key: 'n', ctrlOrCmd: false, description: 'New Task', action: 'new-task' },
+    { key: 'e', ctrlOrCmd: false, description: 'Edit Selected Task', action: 'edit-task' },
+    { key: 'd', ctrlOrCmd: false, description: 'Delete Selected Task', action: 'delete-task' },
+    { key: '/', ctrlOrCmd: false, description: 'Focus Search', action: 'search' },
+    { key: 'Escape', ctrlOrCmd: false, description: 'Close Modal/Palette', action: 'close' },
+    { key: '?', ctrlOrCmd: false, description: 'Show Shortcuts', action: 'help' }
+  ],
+
+  /**
+   * Initialize the command palette
+   */
+  init() {
+    this.createPaletteHTML();
+    this.createShortcutLegendHTML();
+    this.bindKeyboardEvents();
+    this.bindPaletteEvents();
+  },
+
+  /**
+   * Create the command palette HTML structure
+   */
+  createPaletteHTML() {
+    const existing = document.getElementById('command-palette-overlay');
+    if (existing) existing.remove();
+
+    const paletteHTML = `
+      <div id="command-palette-overlay" class="command-palette-overlay">
+        <div class="command-palette-container">
+          <div class="command-palette-header">
+            <div class="command-palette-icon">⚡</div>
+            <input 
+              type="text" 
+              id="command-palette-input" 
+              class="command-palette-input" 
+              placeholder="Type a command or search..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <div class="command-palette-close" id="command-palette-close">
+              <span>ESC</span>
+            </div>
+          </div>
+          <div class="command-palette-results" id="command-palette-results">
+            <div class="command-palette-empty">
+              Type to search for commands...
+            </div>
+          </div>
+          <div class="command-palette-footer">
+            <div class="command-palette-hint">
+              <kbd>↑↓</kbd> Navigate
+              <kbd>Enter</kbd> Execute
+              <kbd>ESC</kbd> Close
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', paletteHTML);
+  },
+
+  /**
+   * Create the keyboard shortcut legend HTML
+   */
+  createShortcutLegendHTML() {
+    const existing = document.getElementById('shortcut-legend-overlay');
+    if (existing) existing.remove();
+
+    const shortcutsHTML = this.shortcuts.map(shortcut => {
+      const keyDisplay = shortcut.ctrlOrCmd 
+        ? `<kbd class="key-combo"><span class="key-mod">${this.isMac() ? 'Cmd' : 'Ctrl'}</span> + <span class="key-main">${shortcut.key.toUpperCase()}</span></kbd>`
+        : `<kbd class="key-single">${shortcut.key === 'Escape' ? 'ESC' : shortcut.key.toUpperCase()}</kbd>`;
+      
+      return `
+        <div class="shortcut-item">
+          ${keyDisplay}
+          <span class="shortcut-description">${shortcut.description}</span>
+        </div>
+      `;
+    }).join('');
+
+    const legendHTML = `
+      <div id="shortcut-legend-overlay" class="shortcut-legend-overlay">
+        <div class="shortcut-legend-container">
+          <div class="shortcut-legend-header">
+            <h2>⌨️ Keyboard Shortcuts</h2>
+            <button class="shortcut-legend-close" id="shortcut-legend-close">×</button>
+          </div>
+          <div class="shortcut-legend-content">
+            ${shortcutsHTML}
+          </div>
+          <div class="shortcut-legend-footer">
+            <p>Press <kbd>?</kbd> anytime to toggle this guide</p>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', legendHTML);
+  },
+
+  /**
+   * Bind keyboard event listeners
+   */
+  bindKeyboardEvents() {
+    document.addEventListener('keydown', (e) => {
+      // Ignore if typing in input field (except for command palette trigger)
+      const isInputFocused = e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA';
+      
+      // Command Palette Toggle (Cmd/Ctrl+K)
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        this.toggle();
+        return;
+      }
+
+      // If command palette is open, handle its shortcuts
+      if (this.isOpen) {
+        this.handlePaletteKeydown(e);
+        return;
+      }
+
+      // If shortcut legend is open, close on ESC
+      if (this.shortcutLegendOpen && e.key === 'Escape') {
+        e.preventDefault();
+        this.closeShortcutLegend();
+        return;
+      }
+
+      // Global shortcuts (only when not typing in inputs)
+      if (!isInputFocused && !this.isOpen) {
+        this.handleGlobalShortcut(e);
+      }
+    });
+  },
+
+  /**
+   * Handle global keyboard shortcuts
+   */
+  handleGlobalShortcut(e) {
+    const key = e.key.toLowerCase();
+
+    switch (key) {
+      case 'n':
+        e.preventDefault();
+        modal.openCreateModal();
+        break;
+      
+      case 'e':
+        e.preventDefault();
+        this.editFirstSelectedTask();
+        break;
+      
+      case 'd':
+        e.preventDefault();
+        this.deleteFirstSelectedTask();
+        break;
+      
+      case '/':
+        e.preventDefault();
+        const searchInput = document.getElementById('global-search');
+        if (searchInput) searchInput.focus();
+        break;
+      
+      case 'escape':
+        e.preventDefault();
+        this.closeAllModals();
+        break;
+      
+      case '?':
+        e.preventDefault();
+        this.openShortcutLegend();
+        break;
+    }
+  },
+
+  /**
+   * Handle keyboard navigation within the command palette
+   */
+  handlePaletteKeydown(e) {
+    switch (e.key) {
+      case 'Escape':
+        e.preventDefault();
+        this.close();
+        break;
+      
+      case 'ArrowDown':
+        e.preventDefault();
+        this.selectNext();
+        break;
+      
+      case 'ArrowUp':
+        e.preventDefault();
+        this.selectPrevious();
+        break;
+      
+      case 'Enter':
+        e.preventDefault();
+        this.executeSelected();
+        break;
+    }
+  },
+
+  /**
+   * Bind command palette UI events
+   */
+  bindPaletteEvents() {
+    // Input search
+    const input = document.getElementById('command-palette-input');
+    if (input) {
+      input.addEventListener('input', (e) => {
+        this.searchQuery = e.target.value;
+        this.search();
+      });
+    }
+
+    // Close button
+    const closeBtn = document.getElementById('command-palette-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => this.close());
+    }
+
+    // Overlay click to close
+    const overlay = document.getElementById('command-palette-overlay');
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) this.close();
+      });
+    }
+
+    // Shortcut legend close button
+    const legendCloseBtn = document.getElementById('shortcut-legend-close');
+    if (legendCloseBtn) {
+      legendCloseBtn.addEventListener('click', () => this.closeShortcutLegend());
+    }
+
+    // Shortcut legend overlay click to close
+    const legendOverlay = document.getElementById('shortcut-legend-overlay');
+    if (legendOverlay) {
+      legendOverlay.addEventListener('click', (e) => {
+        if (e.target === legendOverlay) this.closeShortcutLegend();
+      });
+    }
+  },
+
+  /**
+   * Toggle command palette visibility
+   */
+  toggle() {
+    if (this.isOpen) {
+      this.close();
+    } else {
+      this.open();
+    }
+  },
+
+  /**
+   * Open command palette
+   */
+  open() {
+    this.isOpen = true;
+    this.searchQuery = '';
+    this.selectedIndex = 0;
+    
+    const overlay = document.getElementById('command-palette-overlay');
+    const input = document.getElementById('command-palette-input');
+    
+    if (overlay) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    if (input) {
+      input.value = '';
+      setTimeout(() => input.focus(), 100);
+    }
+    
+    this.renderAllActions();
+  },
+
+  /**
+   * Close command palette
+   */
+  close() {
+    this.isOpen = false;
+    this.searchQuery = '';
+    this.selectedIndex = 0;
+    
+    const overlay = document.getElementById('command-palette-overlay');
+    
+    if (overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  },
+
+  /**
+   * Search and filter actions using fuzzy matching
+   */
+  search() {
+    if (!this.searchQuery.trim()) {
+      this.renderAllActions();
+      return;
+    }
+
+    this.filteredActions = this.actions.filter(action => {
+      return this.fuzzyMatch(action, this.searchQuery);
+    });
+
+    this.selectedIndex = 0;
+    this.renderResults();
+  },
+
+  /**
+   * Fuzzy match algorithm for searching
+   */
+  fuzzyMatch(action, query) {
+    const searchText = query.toLowerCase();
+    const titleMatch = action.title.toLowerCase().includes(searchText);
+    const descMatch = action.description.toLowerCase().includes(searchText);
+    const keywordMatch = action.keywords.some(kw => kw.toLowerCase().includes(searchText));
+    
+    // Simple fuzzy scoring
+    if (titleMatch || descMatch || keywordMatch) {
+      return true;
+    }
+
+    // Character-by-character fuzzy match
+    const title = action.title.toLowerCase();
+    let queryIndex = 0;
+    
+    for (let i = 0; i < title.length && queryIndex < searchText.length; i++) {
+      if (title[i] === searchText[queryIndex]) {
+        queryIndex++;
+      }
+    }
+    
+    return queryIndex === searchText.length;
+  },
+
+  /**
+   * Render all available actions
+   */
+  renderAllActions() {
+    this.filteredActions = [...this.actions];
+    this.renderResults();
+  },
+
+  /**
+   * Render search results
+   */
+  renderResults() {
+    const resultsContainer = document.getElementById('command-palette-results');
+    if (!resultsContainer) return;
+
+    if (this.filteredActions.length === 0) {
+      resultsContainer.innerHTML = `
+        <div class="command-palette-empty">
+          <span class="empty-icon">🔍</span>
+          <p>No commands found</p>
+          <small>Try a different search term</small>
+        </div>
+      `;
+      return;
+    }
+
+    const resultsHTML = this.filteredActions.map((action, index) => {
+      const isSelected = index === this.selectedIndex;
+      const shortcutHTML = action.shortcut 
+        ? `<kbd class="action-shortcut">${action.shortcut}</kbd>` 
+        : '';
+      
+      return `
+        <div class="command-palette-action ${isSelected ? 'selected' : ''}" data-action-id="${action.id}">
+          <div class="action-icon">${action.icon}</div>
+          <div class="action-content">
+            <div class="action-title">${this.highlightMatch(action.title, this.searchQuery)}</div>
+            <div class="action-description">${action.description}</div>
+          </div>
+          ${shortcutHTML}
+        </div>
+      `;
+    }).join('');
+
+    resultsContainer.innerHTML = resultsHTML;
+
+    // Bind click events to actions
+    resultsContainer.querySelectorAll('.command-palette-action').forEach((el, index) => {
+      el.addEventListener('click', () => {
+        this.selectedIndex = index;
+        this.executeSelected();
+      });
+    });
+
+    // Ensure selected item is visible
+    this.scrollToSelected();
+  },
+
+  /**
+   * Highlight matching characters in search results
+   */
+  highlightMatch(text, query) {
+    if (!query.trim()) return text;
+    
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<mark>$1</mark>');
+  },
+
+  /**
+   * Select next action in the list
+   */
+  selectNext() {
+    if (this.filteredActions.length === 0) return;
+    
+    this.selectedIndex = (this.selectedIndex + 1) % this.filteredActions.length;
+    this.renderResults();
+  },
+
+  /**
+   * Select previous action in the list
+   */
+  selectPrevious() {
+    if (this.filteredActions.length === 0) return;
+    
+    this.selectedIndex = this.selectedIndex - 1;
+    if (this.selectedIndex < 0) {
+      this.selectedIndex = this.filteredActions.length - 1;
+    }
+    this.renderResults();
+  },
+
+  /**
+   * Execute the currently selected action
+   */
+  executeSelected() {
+    if (this.filteredActions.length === 0) return;
+    
+    const selectedAction = this.filteredActions[this.selectedIndex];
+    if (selectedAction && selectedAction.handler) {
+      selectedAction.handler();
+      this.close();
+    }
+  },
+
+  /**
+   * Scroll to ensure selected item is visible
+   */
+  scrollToSelected() {
+    const resultsContainer = document.getElementById('command-palette-results');
+    if (!resultsContainer) return;
+
+    const selectedEl = resultsContainer.querySelector('.command-palette-action.selected');
+    if (selectedEl) {
+      selectedEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  },
+
+  /**
+   * Open keyboard shortcuts legend
+   */
+  openShortcutLegend() {
+    this.shortcutLegendOpen = true;
+    const overlay = document.getElementById('shortcut-legend-overlay');
+    if (overlay) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  },
+
+  /**
+   * Close keyboard shortcuts legend
+   */
+  closeShortcutLegend() {
+    this.shortcutLegendOpen = false;
+    const overlay = document.getElementById('shortcut-legend-overlay');
+    if (overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  },
+
+  /**
+   * Helper: Check if running on Mac
+   */
+  isMac() {
+    return navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  },
+
+  /**
+   * Helper: Edit first selected/visible task
+   */
+  editFirstSelectedTask() {
+    const firstCard = document.querySelector('.kanban-card');
+    if (firstCard) {
+      const taskId = firstCard.dataset.taskId;
+      if (taskId) modal.openEditModal(taskId);
+    }
+  },
+
+  /**
+   * Helper: Delete first selected/visible task
+   */
+  deleteFirstSelectedTask() {
+    const firstCard = document.querySelector('.kanban-card');
+    if (firstCard) {
+      const taskId = firstCard.dataset.taskId;
+      if (taskId) modal.openDeleteConfirmModal(taskId);
+    }
+  },
+
+  /**
+   * Helper: Close all open modals
+   */
+  closeAllModals() {
+    const modals = document.querySelectorAll('.modal.open');
+    modals.forEach(modal => modal.classList.remove('open'));
+    this.close();
+  }
+};
+
+
+

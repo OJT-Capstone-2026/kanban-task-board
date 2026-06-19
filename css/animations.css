@@ -1,0 +1,290 @@
+/* Keyframes and Animation Library */
+
+/* Card Entrance Slide Up */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.task-card.new-task-anim {
+  animation: slideUpFade 0.4s var(--transition-elastic) forwards;
+}
+
+/* Card Delete Slide Out */
+@keyframes slideDownFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(25px) scale(0.85);
+  }
+}
+
+.task-card.delete-task-anim {
+  animation: slideDownFadeOut 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+/* Shimmer Skeleton Loader Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, 
+    var(--border-light) 25%, 
+    var(--border-medium) 37%, 
+    var(--border-light) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+}
+
+/* Ripple Button Effect */
+.ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Border Glow Pulse */
+@keyframes borderGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.1);
+    border-color: var(--border-light);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.25);
+    border-color: var(--accent);
+  }
+}
+
+.glow-pulse {
+  animation: borderGlowPulse 2.5s infinite ease-in-out;
+}
+
+/* Counter Metric Update Pulse */
+@keyframes countScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+    color: var(--accent);
+  }
+}
+
+.counter-pulse {
+  animation: countScale 0.4s var(--transition-elastic);
+}
+
+/* Toast Notification Styles and Animations */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 300;
+}
+
+.toast {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  min-width: 280px;
+  max-width: 380px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-family: var(--font-primary);
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  animation: toastEntrance 0.35s var(--transition-elastic) forwards;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.toast.toast-success { border-left-color: var(--success); }
+.toast.toast-warning { border-left-color: var(--warning); }
+.toast.toast-danger { border-left-color: var(--danger); }
+
+.toast.toast-fadeout {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+}
+
+@keyframes toastEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* command palette styling and entry animation */
+.cmd-palette-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(9, 13, 26, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 250;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.cmd-palette-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cmd-palette {
+  background: var(--bg-modal);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 600px;
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  transform: translateY(-20px);
+  transition: transform var(--transition-normal);
+}
+
+.cmd-palette-overlay.open .cmd-palette {
+  transform: translateY(0);
+}
+
+.cmd-search-row {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--border-light);
+  gap: 12px;
+}
+
+.cmd-search-row i {
+  color: var(--text-tertiary);
+  font-size: 1.1rem;
+}
+
+.cmd-search-input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.cmd-search-input:focus {
+  box-shadow: none;
+}
+
+.cmd-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: var(--spacing-sm);
+}
+
+.cmd-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.cmd-item.selected {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.cmd-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cmd-item-kbd {
+  font-size: 0.7rem;
+  font-family: var(--font-primary);
+  background: var(--border-medium);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  color: var(--text-tertiary);
+}
+
+/* Drop Bounce Elastic Animation */
+@keyframes dropBounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.93) translateY(6px);
+  }
+  60% {
+    transform: scale(1.02) translateY(-4px);
+  }
+  80% {
+    transform: scale(0.98) translateY(1px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.task-card.drop-bounce-anim {
+  animation: dropBounce 0.45s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Fade In Slide Transition for Views */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

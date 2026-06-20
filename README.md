@@ -1,3 +1,25 @@
+## Development Team
+
+### Team Members
+
+- Aditya Vawhal 
+- Arman Patel
+
+### Project Contributions
+
+#### Aditya Vawhal
+- Core Kanban Board Development
+- Drag and Drop Implementation
+- Local Storage Management
+- Application Architecture
+
+#### Arman Patel
+- Project Documentation
+- Testing and Validation
+- Repository Collaboration
+- UI Review
+- Deployment Verification
+
 # TaskFlow Pro – Kanban Task Management System
 
 > A premium, enterprise-grade Kanban board built with **zero frameworks** — pure HTML5, CSS3, and vanilla ES6+ JavaScript.

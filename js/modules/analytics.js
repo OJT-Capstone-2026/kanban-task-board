@@ -15,7 +15,8 @@ export const analytics = {
     today.setHours(0,0,0,0);
     const overdue = tasks.filter(t => {
       if (!t.dueDate || t.status === 'done') return false;
-      const due = new Date(t.dueDate);
+      const parts = t.dueDate.split('-');
+      const due = new Date(parts[0], parts[1] - 1, parts[2]);
       due.setHours(0,0,0,0);
       return due < today;
     }).length;

@@ -122,11 +122,13 @@ export const board = {
     if (task.dueDate) {
       const today = new Date();
       today.setHours(0,0,0,0);
-      const due = new Date(task.dueDate);
+      
+      const parts = task.dueDate.split('-');
+      const due = new Date(parts[0], parts[1] - 1, parts[2]);
       due.setHours(0,0,0,0);
       
       const isOverdue = due < today && task.status !== 'done';
-      const formattedDate = new Date(task.dueDate).toLocaleDateString('en-US', {
+      const formattedDate = due.toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric'
       });

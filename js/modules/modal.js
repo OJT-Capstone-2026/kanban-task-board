@@ -311,7 +311,7 @@ export const modal = {
 
     // Navigation and Action binding within Command Palette
     input.addEventListener('keydown', (e) => {
-      const items = list.querySelectorAll('.cmd-item');
+      const items = Array.from(list.querySelectorAll('.cmd-item')).filter(item => item.style.display !== 'none');
       if (items.length === 0) return;
 
       let selectedIndex = Array.from(items).findIndex(item => item.classList.contains('selected'));
@@ -360,10 +360,22 @@ export const modal = {
 
     const commands = [
       { name: 'Create New Task', icon: 'fa-plus', shortcut: 'N', action: () => this.openCreateModal() },
-      { name: 'View Active Tasks (Kanban)', icon: 'fa-columns', shortcut: '', action: () => {} },
-      { name: 'Open Activity Timeline', icon: 'fa-history', shortcut: '', action: () => document.getElementById('activity-toggle-btn').click() },
-      { name: 'Toggle Dark / Light Theme', icon: 'fa-adjust', shortcut: '', action: () => document.getElementById('theme-toggle-btn').click() },
-      { name: 'Clear Active Board Filters', icon: 'fa-filter-slash', shortcut: '', action: () => document.getElementById('clear-filters-btn').click() }
+      { name: 'View Active Tasks (Kanban)', icon: 'fa-columns', shortcut: '', action: () => {
+        const link = document.querySelector('.sidebar-nav .nav-link[data-view="kanban"]');
+        if (link) link.click();
+      } },
+      { name: 'Open Activity Timeline', icon: 'fa-history', shortcut: '', action: () => {
+        const btn = document.getElementById('activity-toggle-btn');
+        if (btn) btn.click();
+      } },
+      { name: 'Toggle Dark / Light Theme', icon: 'fa-adjust', shortcut: '', action: () => {
+        const btn = document.getElementById('theme-toggle-btn');
+        if (btn) btn.click();
+      } },
+      { name: 'Clear Active Board Filters', icon: 'fa-filter-slash', shortcut: '', action: () => {
+        const btn = document.getElementById('clear-filters-btn');
+        if (btn) btn.click();
+      } }
     ];
 
     // Add search index for tasks themselves

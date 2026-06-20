@@ -23,8 +23,8 @@ export const settings = {
   },
 
   updateWorkspaceNameUI(name) {
-    // Update logo span
-    const logoSpan = document.querySelector('.logo span');
+    // Update logo span or app title
+    const logoSpan = document.querySelector('.app-title') || document.querySelector('.logo span');
     if (logoSpan) logoSpan.textContent = name;
 
     // Update hero h2

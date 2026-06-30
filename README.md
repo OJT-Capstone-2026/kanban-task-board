@@ -1,17 +1,10 @@
 ## Development Team
 
-### Team Members
+### Team Member
 
-- Aditya Vawhal 
 - Arman Patel
 
 ### Project Contributions
-
-#### Aditya Vawhal
-- Core Kanban Board Development
-- Drag and Drop Implementation
-- Local Storage Management
-- Application Architecture
 
 #### Arman Patel
 - Project Documentation
@@ -19,6 +12,10 @@
 - Repository Collaboration
 - UI Review
 - Deployment Verification
+- Core Kanban Board Development
+- Drag and Drop Implementation
+- Local Storage Management
+- Application Architecture
 
 # TaskFlow Pro – Kanban Task Management System
 
